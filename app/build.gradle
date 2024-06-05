@@ -26,8 +26,8 @@ android {
             buildPython("C:/Users/abc/AppData/Local/Programs/Python/Python310/python.exe")
             pip{
                 install "replicate"
+                install "pydantic<2"
                 install "translate"
-
             }
         }
 

@@ -1,5 +1,5 @@
 import replicate
-from translate import Translator
+# from translate import Translator
 
 client = replicate.Client(api_token="r8_EaenLto4e2ki7lKyHZLH21DqkMSDjmc3SVTnr")
 
@@ -13,13 +13,14 @@ output1 = client.run(
     input=input1
 )
 # print("lang_code language \n en English(India) \n gu-IN Gujarati(India) \n hi-IN Hindi(India) \n kn-IN Kannada(India) \n kok-IN Konkani(India) \n mr-IN Marathi(India) \n pa-IN Punjabi(Indiak) \n sa-IN Sanskrit(India) \n ta-IN Tamil(India) \n te-IN Telugu(India)")
-convert_lang="hi"
+
+# convert_lang="hi"
 
 # input("\nENTER THE LANGUAGE YOU WANT TO CONVERT INTO (ENTER THE LANG_CODE) :")
 
 output="".join(output1)
-
-translator=Translator(from_lang = "en",to_lang=convert_lang)
-translation=translator.translate(output)
-
-data="".join(translation)
+#
+# translator=Translator(from_lang = "en",to_lang=convert_lang)
+# translation=translator.translate(output)
+#
+# data="".join(translation)
